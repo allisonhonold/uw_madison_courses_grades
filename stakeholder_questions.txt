@@ -2,6 +2,8 @@
 As, Bs, Cs, etc.
     Is the GPA they give statistically different
 
+    A) In the math department, do any instructors give different avg gpas?
+
 2. Does time of day and/or day of the week have a statistically significant
 correlation with As/GPA?
 
