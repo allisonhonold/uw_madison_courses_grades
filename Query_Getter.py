@@ -24,4 +24,5 @@ def Query_Executor(table_name):
 
 
 teachings_query = Query_Executor("teachings")
-print(teachings_query.head())
+print(teachings_query.describe())
+
