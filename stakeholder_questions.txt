@@ -1,0 +1,15 @@
+1. For each teacher, are they giving a statistically different amount of 
+As, Bs, Cs, etc.
+    Is the GPA they give statistically different
+
+2. Does time of day and/or day of the week have a statistically significant
+correlation with As/GPA?
+
+3. For each teacher and/or course, are they giving a statistically 
+significant amount of pass/fail?
+    Are they teaching/giving a significant amount of non credit? 
+    E.g., Incomplete, No Report, etc
+
+4. Do STEM classes have a different amount of C or below? Pass/fail?
+
+5. Do STEM classes have a different amount of students?
