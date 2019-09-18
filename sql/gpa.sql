@@ -23,4 +23,5 @@ SELECT  course_offering_uuid,
 
 
 FROM grade_distributions_casted
+WHERE (a_count + ab_count + b_count + bc_count + c_count + d_count + f_count) != 0
 LIMIT 5;
