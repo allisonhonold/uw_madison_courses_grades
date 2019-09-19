@@ -1,5 +1,5 @@
 ## Summary Look at Tables in Database
-[Summary Look at Database](tech_docs/)
+[Summary Look at Database](database_details.md)
 
 ## Entity Relationship Diagram for Database
 ![Entity Relationship Diagram for UW Madison Courses and Grades Database](ERD.png)
@@ -16,4 +16,3 @@ Order of operations to generate the data used in our hypothesis tests:
 8. \i days_of_week_gpas.sql
 9. \i stem_class_gpa.sql
 10. \i non_stem_class_gpa.sql
-
