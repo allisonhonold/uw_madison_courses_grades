@@ -1,3 +1,10 @@
+/*
+Object:         Query
+Author:         Aaron Chen
+Script Date:    September 19, 2019
+Description:    Returns the classes that start after 12:00 noon.
+*/
+
 CREATE MATERIALIZED VIEW all_afternoon_classes AS
     SELECT * 
     FROM 
