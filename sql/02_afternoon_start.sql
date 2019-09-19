@@ -1,12 +1,12 @@
 /*
-Object:         Query
+Object:         Materialized View
 Author:         Aaron Chen
 Script Date:    September 19, 2019
-Description:    Returns the classes that start before 12:00 noon.
+Description:    Returns the classes that start after 12:00 noon.
 */
 
-CREATE MATERIALIZED VIEW all_morning_classes AS     
-    SELECT *
+CREATE MATERIALIZED VIEW all_afternoon_classes AS
+    SELECT * 
     FROM 
         (SELECT c.uuid, courses.name, courses.number, 
             CAST(start_time AS float) / 60 AS start_time_in_hours, 
@@ -20,6 +20,5 @@ CREATE MATERIALIZED VIEW all_morning_classes AS
         JOIN subjects on subject_memberships.subject_code = subjects.code 
         GROUP BY c.uuid, courses.name, courses.number, subjects.name, start_time_in_hours, end_time_in_hours
         ORDER BY start_time_in_hours ASC
-        ) AS morning_start_times_converted
-    WHERE start_time_in_hours BETWEEN 0 AND 12 AND name != 'null';
-
+        ) AS afternoon_start_times_converted
+    WHERE start_time_in_hours BETWEEN 12.00000000001 AND 23.9 AND name != 'null';
