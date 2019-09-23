@@ -1,6 +1,9 @@
 # VS Code files
 .vscode/
 
+# Database/data folder
+data/
+
 # MacOS system file
 .DS_Store
 
