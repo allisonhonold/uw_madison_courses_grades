@@ -18,5 +18,4 @@ createdb uw_madison
 pgloader database.sqlite postgresql:///uw_madison
 
 # make directory for created data
-
 mkdir write_data
